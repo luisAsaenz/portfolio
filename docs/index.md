@@ -8,7 +8,7 @@ tags: [portfolio, projects, embedded, firmware]
   <h1>Luis Saenz</h1>
   <p class="lead">Embedded Systems Engineer — Building reliable embedded solutions from circuit to firmware.</p>
   <div>
-    <a class="hero-cta primary" href="/Projects/projects/">View Projects</a>
+    <a class="hero-cta primary" href="Projects/projects/">View Projects</a>
     <a class="hero-cta ghost" href="/resume.pdf">Download Resume (PDF)</a>
   </div>
 </div>
@@ -25,7 +25,7 @@ tags: [portfolio, projects, embedded, firmware]
   <div>
     <p class="project-meta"><span class="project-title">STEM - DAM</span><span class="kv">C · STM32 · FreeRTOS</span></p>
     <p class="project-summary">One‑sentence problem → solution → measurable result.</p>
-    <p style="margin-top:8px;"><a href="subfolder/index.md" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
+    <p style="margin-top:8px;"><a href="subfolder/index" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
   </div>
 </article>
 
