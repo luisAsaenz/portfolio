@@ -59,6 +59,8 @@ extra_javascript:
     
 not_in_nav: |
   static
+  subfolder
+  
   
 copyright: "Copyright &copy; 2026 team-name-here"
 
