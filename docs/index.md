@@ -6,10 +6,11 @@ tags: [portfolio, projects, embedded, firmware]
 <div align="center">
 
 # **Luis Saenz**  
+
 **Embedded Systems Engineer**  
 _Building reliable embedded solutions from circuit to firmware — C/C++, RTOS, low‑level drivers, and IoT._
 
-<a href="Projects/projects.md" style="display:inline-block;margin:8px 12px;padding:10px 18px;background:#0b66ff;color:#fff;border-radius:6px;text-decoration:none;">View Projects</a>
+<a href="Projects/projects" style="display:inline-block;margin:8px 12px;padding:10px 18px;background:#0b66ff;color:#fff;border-radius:6px;text-decoration:none;">View Projects</a>
 <a href="/resume.pdf" style="display:inline-block;margin:8px 12px;padding:10px 18px;border:1px solid #0b66ff;color:#0b66ff;border-radius:6px;text-decoration:none;">Download Resume (PDF)</a>
 
 </div>
@@ -26,7 +27,7 @@ This site is a compact portfolio and datasheet collection for embedded systems p
 
 | Thumbnail | Project | Summary | Tech |
 |---:|---|---|---|
-| ![Autonomous Docking Drone](./subfolder/EmbSysProj/TopPCB_Luis.png) | **STEM - DAM** — [Case Study](subfolder/index.md) | One‑sentence problem → solution → measurable result. | C · STM32 · FreeRTOS |
+| ![Autonomous Docking Drone](subfolder/EmbSysProj/TopPCB_Luis.png) | **STEM - DAM** — [Case Study](subfolder/index.md) | One‑sentence problem → solution → measurable result. | C · STM32 · FreeRTOS |
 | ![IoT Weather Station](/assets/thumbs/project2.jpg) | **PROJECT 2 TITLE** — [Case Study](/projects/project-2-slug) | One‑sentence problem → solution → measurable result. | ESP32 · MQTT · Low‑Power |
 
 ---
