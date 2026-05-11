@@ -1,31 +1,46 @@
 ---
-title: Welcome
-tags:
-- tag1
-- tag2
+title: Luis Saenz — Embedded Systems Engineer
+tags: [portfolio, projects, embedded, firmware]
 ---
-<center>
-<font size= "10">Luis Saenz</font><br>
 
-<font size= "8"> portfolio</font><br>
+<div align="center">
 
-**Submission: month, DD, YYYY**
-</center>
+# **Luis Saenz**  
+**Embedded Systems Engineer**  
+_Building reliable embedded solutions from circuit to firmware — C/C++, RTOS, low‑level drivers, and IoT._
+
+<a href="/Projects/projects.md" style="display:inline-block;margin:8px 12px;padding:10px 18px;background:#0b66ff;color:#fff;border-radius:6px;text-decoration:none;">View Projects</a>
+<a href="/resume.pdf" style="display:inline-block;margin:8px 12px;padding:10px 18px;border:1px solid #0b66ff;color:#0b66ff;border-radius:6px;text-decoration:none;">Download Resume (PDF)</a>
+
+</div>
+
+---
 
 ## Introduction
 
-* **This needs to be updated so that a reader gets an idea of the purpose of this datasheet.**
+This site is a compact portfolio and datasheet collection for embedded systems projects. Each project includes a short summary, technical approach, implementation details, and measurable results so reviewers can quickly evaluate design depth and impact.
 
-### Project Summary
+---
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/template_report/)
+## Featured Projects
 
-### My Contribution
+| Thumbnail | Project | Summary | Tech |
+|---:|---|---|---|
+| ![Autonomous Docking Drone](/subfolder/EmbSysProj/TopPCB_Luis.png) | **STEM - DAM** — [Case Study](/portfolio/subfolder/index) | One‑sentence problem → solution → measurable result. | C · STM32 · FreeRTOS |
+| ![IoT Weather Station](/assets/thumbs/project2.jpg) | **PROJECT 2 TITLE** — [Case Study](/projects/project-2-slug) | One‑sentence problem → solution → measurable result. | ESP32 · MQTT · Low‑Power |
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+---
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/04-BOM/BOM/) section of the datasheet.
+## How this site is organized
 
->Continue for all the remaining/missing sections.
+- **Home** — quick intro and featured projects.  
+- **Projects** — case studies with architecture, implementation, results, and repo links.  
+- **Datasheet sections** — requirements, BOM, schematic, PCB, verification, reflection, and appendix.
+
+---
+
+## Contact
+
+- **Email:** luis@example.com  
+- **GitHub:** https://github.com/luisasaenz  
+- **LinkedIn:** https://www.linkedin.com/in/yourprofile
