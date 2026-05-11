@@ -5,11 +5,9 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">Luis Saenz</font><br>
-as part of<br>
+<font size= "10">Luis Saenz</font><br>
+
 <font size= "8"> portfolio</font><br>
-for<br>
-<font size= "5"> Team ### </font><br>
 
 **Submission: month, DD, YYYY**
 </center>
