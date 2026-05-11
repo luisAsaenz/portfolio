@@ -7,7 +7,7 @@ tags:
 <center>
 <font size= "6">Luis Saenz</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> portfolio Name</font><br>
 for<br>
 <font size= "5"> Team ### </font><br>
 
