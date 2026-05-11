@@ -9,7 +9,7 @@ tags: [portfolio, projects, embedded, firmware]
   <p class="lead">Embedded Systems Engineer — Building reliable embedded solutions from circuit to firmware.</p>
   <div>
     <a class="hero-cta primary" href="Projects/projects/">View Projects</a>
-    <a class="hero-cta ghost" href="/resume.pdf">Download Resume (PDF)</a>
+    <a class="hero-cta ghost" href="subfolder/Mechatronic.pdf">Download Resume (PDF)</a>
   </div>
 </div>
 
@@ -23,9 +23,9 @@ tags: [portfolio, projects, embedded, firmware]
 <article class="project-card">
   <img class="project-thumb" src="subfolder/EmbSysProj/TopPCB_Luis.png" alt="Autonomous Docking Drone thumbnail">
   <div>
-    <p class="project-meta"><span class="project-title">STEM - DAM</span><span class="kv">C · STM32 · FreeRTOS</span></p>
+    <p class="project-meta"><span class="project-title">S.T.E.M. - DAM</span><span class="kv">C · STM32 · FreeRTOS</span></p>
     <p class="project-summary">One‑sentence problem → solution → measurable result.</p>
-    <p style="margin-top:8px;"><a href="subfolder/index" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
+    <p style="margin-top:8px;"><a href="Projects/esproj" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
   </div>
 </article>
 
@@ -59,6 +59,6 @@ This site is a compact portfolio and datasheet collection for embedded systems p
 
 ## Contact
 
-- **Email:** luis@example.com  
-- **GitHub:** https://github.com/luisasaenz  
-- **LinkedIn:** https://www.linkedin.com/in/yourprofile
+- **Email:** luis.a.saenz@outlook.com
+- **GitHub:** [https://github.com/luisAsaenz](https://github.com/luisAsaenz)
+- **LinkedIn:** [https://www.linkedin.com/in/luis-a-saenz/](https://www.linkedin.com/in/luis-a-saenz/)
