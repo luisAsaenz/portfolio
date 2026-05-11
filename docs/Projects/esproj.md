@@ -7,7 +7,7 @@ tags: [case-study, embedded, esp32, pcb, schematic, mqtt, wifi]
   <h1>STEM Education Project</h1>
   <p class="lead">Custom ESP32 wireless module providing Wi‑Fi connectivity, MQTT messaging hooks, and clean electrical interfaces for a modular STEM learning platform.</p>
   <div>
-    <a class="hero-cta primary" href="./projects">← Back to Projects</a>
+    <a class="hero-cta primary" href="./projects/">← Back to Projects</a>
     <a class="hero-cta ghost" href="https://egr314-2025-s-202.github.io/team202.github.io/">Team Website</a>
   </div>
 </div>
@@ -52,7 +52,7 @@ Create a **custom ESP32 PCB** that:
 <div class="projects-grid">
 
 <article class="project-card">
-  <img class="project-thumb" src="/docs/subfolder/EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB">
+  <img class="project-thumb" src="/subfolder/EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB">
   <div>
     <p class="project-meta"><span class="project-title">PCB Design</span><span class="kv">4‑Layer · ESP32‑WROOM</span></p>
     <p class="project-summary">Designed a compact PCB integrating the ESP32 module, power regulation, decoupling, and GPIO expansion for the team’s sensing modules.</p>
