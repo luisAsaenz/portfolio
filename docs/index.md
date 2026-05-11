@@ -3,15 +3,41 @@ title: Luis Saenz — Embedded Systems Engineer
 tags: [portfolio, projects, embedded, firmware]
 ---
 
-<div align="center">
+<!-- Hero and CTAs -->
+<div class="hero">
+  <h1>Luis Saenz</h1>
+  <p class="lead">Embedded Systems Engineer — Building reliable embedded solutions from circuit to firmware.</p>
+  <div>
+    <a class="hero-cta primary" href="/Projects/projects/">View Projects</a>
+    <a class="hero-cta ghost" href="/resume.pdf">Download Resume (PDF)</a>
+  </div>
+</div>
 
-# **Luis Saenz**  
+---
 
-**Embedded Systems Engineer**  
-_Building reliable embedded solutions from circuit to firmware — C/C++, RTOS, low‑level drivers, and IoT._
+## Featured Projects
 
-<a href="Projects/projects" style="display:inline-block;margin:8px 12px;padding:10px 18px;background:#0b66ff;color:#fff;border-radius:6px;text-decoration:none;">View Projects</a>
-<a href="/resume.pdf" style="display:inline-block;margin:8px 12px;padding:10px 18px;border:1px solid #0b66ff;color:#0b66ff;border-radius:6px;text-decoration:none;">Download Resume (PDF)</a>
+<div class="projects-grid">
+
+<!-- Project 1 -->
+<article class="project-card">
+  <img class="project-thumb" src="subfolder/EmbSysProj/TopPCB_Luis.png" alt="Autonomous Docking Drone thumbnail">
+  <div>
+    <p class="project-meta"><span class="project-title">STEM - DAM</span><span class="kv">C · STM32 · FreeRTOS</span></p>
+    <p class="project-summary">One‑sentence problem → solution → measurable result.</p>
+    <p style="margin-top:8px;"><a href="subfolder/index.md" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
+  </div>
+</article>
+
+<!-- Project 2 -->
+<article class="project-card">
+  <img class="project-thumb" src="/assets/thumbs/project2.jpg" alt="Project 2 thumbnail">
+  <div>
+    <p class="project-meta"><span class="project-title">PROJECT 2 TITLE</span><span class="kv">ESP32 · MQTT · Low‑Power</span></p>
+    <p class="project-summary">One‑sentence problem → solution → measurable result.</p>
+    <p style="margin-top:8px;"><a href="/projects/project-2-slug" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
+  </div>
+</article>
 
 </div>
 
@@ -20,15 +46,6 @@ _Building reliable embedded solutions from circuit to firmware — C/C++, RTOS, 
 ## Introduction
 
 This site is a compact portfolio and datasheet collection for embedded systems projects. Each project includes a short summary, technical approach, implementation details, and measurable results so reviewers can quickly evaluate design depth and impact.
-
----
-
-## Featured Projects
-
-| Thumbnail | Project | Summary | Tech |
-|---:|---|---|---|
-| ![Autonomous Docking Drone](subfolder/EmbSysProj/TopPCB_Luis.png) | **STEM - DAM** — [Case Study](subfolder/index.md) | One‑sentence problem → solution → measurable result. | C · STM32 · FreeRTOS |
-| ![IoT Weather Station](/assets/thumbs/project2.jpg) | **PROJECT 2 TITLE** — [Case Study](/projects/project-2-slug) | One‑sentence problem → solution → measurable result. | ESP32 · MQTT · Low‑Power |
 
 ---
 
