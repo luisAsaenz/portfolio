@@ -60,7 +60,7 @@ Create a **custom ESP32 PCB** that:
 </article>
 
 <article class="project-card">
-  <img class="project-thumb" src="./EmbSysProj/TopPCB_Luis.png" alt="Firmware debugging">
+  <img class="project-thumb" src="/Projects/EmbSysProj/TopPCB_Luis.png" alt="Firmware debugging">
   <div>
     <p class="project-meta"><span class="project-title">Schematic & Interfaces</span><span class="kv">Power · GPIO · UART/I2C</span></p>
     <p class="project-summary">Created schematics defining power paths, protection circuitry, and communication buses to ensure reliable integration with the main controller.</p>
