@@ -52,7 +52,7 @@ Create a **custom ESP32 PCB** that:
 <div class="projects-grid">
 
 <article class="project-card">
-  <img class="project-thumb" src="../subfolder/EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB">
+  <img class="project-thumb" src=".../subfolder/EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB">
   <div>
     <p class="project-meta"><span class="project-title">PCB Design</span><span class="kv">4‑Layer · ESP32‑WROOM</span></p>
     <p class="project-summary">Designed a compact PCB integrating the ESP32 module, power regulation, decoupling, and GPIO expansion for the team’s sensing modules.</p>
@@ -60,7 +60,7 @@ Create a **custom ESP32 PCB** that:
 </article>
 
 <article class="project-card">
-  <img class="project-thumb" src="/Projects/EmbSysProj/TopPCB_Luis.png" alt="Firmware debugging">
+  <img class="project-thumb" src="../EmbSysProj/TopPCB_Luis.png" alt="Firmware debugging">
   <div>
     <p class="project-meta"><span class="project-title">Schematic & Interfaces</span><span class="kv">Power · GPIO · UART/I2C</span></p>
     <p class="project-summary">Created schematics defining power paths, protection circuitry, and communication buses to ensure reliable integration with the main controller.</p>

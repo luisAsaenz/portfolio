@@ -73,13 +73,13 @@ extra:
 
 nav:
   - Home: index.md
-  - Requirements: 01-Requirements/Requirements.md
-  - Block Diagram: 02-Block-Diagram/Block-Diagram.md
-  - Component Selection: 03-Component-Selection/Component-Selection.md
-  - Power Budget: 10-Power-Budget/Power-Budget.md
-  - Schematic: 05-Schematic/schematic.md
-  - BOM: 04-BOM/BOM.md
-  - Reflection: 09-Reflection/Reflection.md
+  #- Requirements: 01-Requirements/Requirements.md
+  #- Block Diagram: 02-Block-Diagram/Block-Diagram.md
+  #- Component Selection: 03-Component-Selection/Component-Selection.md
+  #- Power Budget: 10-Power-Budget/Power-Budget.md
+  #- Schematic: 05-Schematic/schematic.md
+  #- BOM: 04-BOM/BOM.md
+  #- Reflection: 09-Reflection/Reflection.md
   - Appendix: Appendix/index.md
   - Projects: Projects/projects.md
       #- A1 Component Selection: Component-Selection/Component-Selection-Process.md
@@ -88,5 +88,5 @@ nav:
       #- A3 Component Selection: Component-Selection/Component-Selection-Process.md
       #- A4a Examples to Remove: 04-Examples-to-Remove/another-subfile.md
       #- A4b Examples to Remove: 04-Examples-to-Remove/charts.md
-  - Examples to Remove: 04-Examples-to-Remove/basic-markdown-examples.md
+  #- Examples to Remove: 04-Examples-to-Remove/basic-markdown-examples.md
 
