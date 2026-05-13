@@ -473,19 +473,18 @@
 
 <hr>
 <h2 id="overview">Overview</h2>
-<p>This STEM learning platform introduces students to embedded systems through modular sensing, actuation, and wireless communication.<br>
-Luis designed the <strong>ESP32 wireless module</strong>, including schematic capture, PCB layout, and interface definition. The board provided Wi‑Fi connectivity and MQTT hooks used for team testing and inter‑module communication.</p>
+<p>This STEM project introduces students to embedded systems through modular sensing, actuation, human interface, and wireless communication.<br>
+Luis designed the <strong>ESP32 wireless module</strong>, including schematic capture, PCB layout, and interface definition. The board provided Wi‑Fi connectivity and MQTT publishing/subscribing which was used for team testing and inter‑module communication.</p>
 <hr>
 <h2 id="problem-statement">Problem Statement</h2>
-<p>The team needed a compact hardware module that could:</p>
+<p>The team needed a hardware module that could:</p>
 <ul>
 <li>Provide reliable Wi‑Fi connectivity  </li>
 <li>Support MQTT‑based messaging for coordination  </li>
-<li>Deliver stable, noise‑tolerant power to the ESP32  </li>
+<li>Receive and deliver messages from team</li>
 <li>Fit within the project’s mechanical constraints  </li>
-<li>Expose GPIOs and communication buses for expansion  </li>
+<li>Deliver power to team </li>
 </ul>
-<p>Off‑the‑shelf boards were too large and lacked the required pinout and power‑conditioning features.</p>
 <hr>
 <h2 id="objective">Objective</h2>
 <p>Create a <strong>custom ESP32 PCB</strong> that:</p>
@@ -501,7 +500,7 @@ Luis designed the <strong>ESP32 wireless module</strong>, including schematic ca
 <div class="projects-grid">
 
 <article class="project-card">
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href=".../subfolder/EmbSysProj/RL_PCB.jpg" data-desc-position="bottom"><img class="project-thumb" src=".../subfolder/EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB"></a>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="..../subfolder/EmbSysProj/RL_PCB.jpg" data-desc-position="bottom"><img class="project-thumb" src="..../subfolder/EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB"></a>
   <div>
     <p class="project-meta"><span class="project-title">PCB Design</span><span class="kv">4‑Layer · ESP32‑WROOM</span></p>
     <p class="project-summary">Designed a compact PCB integrating the ESP32 module, power regulation, decoupling, and GPIO expansion for the team’s sensing modules.</p>
