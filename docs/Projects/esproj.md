@@ -16,23 +16,21 @@ tags: [case-study, embedded, esp32, pcb, schematic, mqtt, wifi]
 
 ## Overview
 
-This STEM learning platform introduces students to embedded systems through modular sensing, actuation, and wireless communication.  
-Luis designed the **ESP32 wireless module**, including schematic capture, PCB layout, and interface definition. The board provided Wi‑Fi connectivity and MQTT hooks used for team testing and inter‑module communication.
+This STEM project introduces students to embedded systems through modular sensing, actuation, human interface, and wireless communication.  
+Luis designed the **ESP32 wireless module**, including schematic capture, PCB layout, and interface definition. The board provided Wi‑Fi connectivity and MQTT publishing/subscribing which was used for team testing and inter‑module communication.
 
 ---
 
 ## Problem Statement
 
-The team needed a compact hardware module that could:
+The team needed a hardware module that could:
 
 - Provide reliable Wi‑Fi connectivity  
 - Support MQTT‑based messaging for coordination  
-- Deliver stable, noise‑tolerant power to the ESP32  
+- Receive and deliver messages from team
 - Fit within the project’s mechanical constraints  
-- Expose GPIOs and communication buses for expansion  
-
-Off‑the‑shelf boards were too large and lacked the required pinout and power‑conditioning features.
-
+- Deliver power to team 
+  
 ---
 
 ## Objective
@@ -52,7 +50,7 @@ Create a **custom ESP32 PCB** that:
 <div class="projects-grid">
 
 <article class="project-card">
-  <img class="project-thumb" src=".../subfolder/EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB">
+  <img class="project-thumb" src="..../subfolder/EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB">
   <div>
     <p class="project-meta"><span class="project-title">PCB Design</span><span class="kv">4‑Layer · ESP32‑WROOM</span></p>
     <p class="project-summary">Designed a compact PCB integrating the ESP32 module, power regulation, decoupling, and GPIO expansion for the team’s sensing modules.</p>
