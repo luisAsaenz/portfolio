@@ -50,7 +50,7 @@ Create a **custom ESP32 PCB** that:
 <div class="projects-grid">
 
 <article class="project-card">
-  <img class="project-thumb" src="../EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB">
+  <img class="project-thumb" src=".../subfolder/EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB">
   <div>
     <p class="project-meta"><span class="project-title">PCB Design</span><span class="kv">4‑Layer · ESP32‑WROOM</span></p>
     <p class="project-summary">Designed a compact PCB integrating the ESP32 module, power regulation, decoupling, and GPIO expansion for the team’s sensing modules.</p>
