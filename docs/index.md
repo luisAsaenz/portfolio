@@ -23,8 +23,8 @@ tags: [portfolio, projects, embedded, firmware]
 <article class="project-card">
   <img class="project-thumb" src="subfolder/EmbSysProj/TopPCB_Luis.png" alt="Autonomous Docking Drone thumbnail">
   <div>
-    <p class="project-meta"><span class="project-title">S.T.E.M. - DAM</span><span class="kv">C · STM32 · FreeRTOS</span></p>
-    <p class="project-summary">One‑sentence problem → solution → measurable result.</p>
+    <p class="project-meta"><span class="project-title">S.T.E.M. - DAM</span><span class="kv">Python · ESP32 · MQTT · IoT</span></p>
+    <p class="project-summary">Created a project integrating four subsystems to teach students core S.T.E.M. concepts. → Conceptually designed a mock dam to demonstrate generators, electricity, and clean‑energy principles. → Delivered an IoT PCB featuring a step‑down buck regulator that supplied stable power and enabled users to view real‑time system data.</p>
     <p style="margin-top:8px;"><a href="Projects/esproj" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
   </div>
 </article>
@@ -33,7 +33,7 @@ tags: [portfolio, projects, embedded, firmware]
 <article class="project-card">
   <img class="project-thumb" src="/assets/thumbs/project2.jpg" alt="Project 2 thumbnail">
   <div>
-    <p class="project-meta"><span class="project-title">PROJECT 2 TITLE</span><span class="kv">ESP32 · MQTT · Low‑Power</span></p>
+    <p class="project-meta"><span class="project-title">Ceiling-mounted Drone Enclosure</span><span class="kv">Arduino · Raspberry Pi5 · Embedded-Systems · PCB Design</span></p>
     <p class="project-summary">One‑sentence problem → solution → measurable result.</p>
     <p style="margin-top:8px;"><a href="/projects/project-2-slug" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
   </div>

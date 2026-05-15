@@ -17,7 +17,7 @@ tags: [case-study, embedded, esp32, pcb, schematic, mqtt, wifi]
 ## Overview
 
 This STEM project introduces students to embedded systems through modular sensing, actuation, human interface, and wireless communication.  
-Luis designed the **ESP32 wireless module**, including schematic capture, PCB layout, and interface definition. The board provided Wi‑Fi connectivity and MQTT publishing/subscribing which was used for team testing and inter‑module communication.
+Luis designed the **ESP32 wireless module**, which include schematic capture, PCB layout, and interface definition. The board provided Wi‑Fi connectivity and MQTT publishing/subscribing which was used for team testing and inter‑module communication.
 
 ---
 
@@ -29,7 +29,7 @@ The team needed a hardware module that could:
 - Support MQTT‑based messaging for coordination  
 - Receive and deliver messages from team
 - Fit within the project’s mechanical constraints  
-- Deliver power to team 
+- Deliver power to team subsystems
   
 ---
 
@@ -40,8 +40,7 @@ Create a **custom ESP32 PCB** that:
 - Integrates Wi‑Fi and MQTT capability  
 - Provides clean 3.3 V regulation and proper decoupling  
 - Breaks out GPIOs for sensors, actuators, and debugging  
-- Supports UART/I2C communication with the main controller  
-- Fits the mechanical footprint of the team’s enclosure  
+- Supports UART communication with team by complying with messaging system.
 
 ---
 
@@ -52,8 +51,8 @@ Create a **custom ESP32 PCB** that:
 <article class="project-card">
   <img class="project-thumb" src="../EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB">
   <div>
-    <p class="project-meta"><span class="project-title">PCB Design</span><span class="kv">4‑Layer · ESP32‑WROOM</span></p>
-    <p class="project-summary">Designed a compact PCB integrating the ESP32 module, power regulation, decoupling, and GPIO expansion for the team’s sensing modules.</p>
+    <p class="project-meta"><span class="project-title">PCB Design</span><span class="kv">2‑Layer · ESP32‑WROOM</span></p>
+    <p class="project-summary">Designed a PCB integrating the ESP32 module, power regulation, decoupling, and GPIO expansion for the team’s messaging system and power delivery.</p>
   </div>
 </article>
 
@@ -61,7 +60,7 @@ Create a **custom ESP32 PCB** that:
   <img class="project-thumb" src="../EmbSysProj/TopPCB_Luis.png" alt="Firmware debugging">
   <div>
     <p class="project-meta"><span class="project-title">Schematic & Interfaces</span><span class="kv">Power · GPIO · UART/I2C</span></p>
-    <p class="project-summary">Created schematics defining power paths, protection circuitry, and communication buses to ensure reliable integration with the main controller.</p>
+    <p class="project-summary">Created schematics defining power paths, protection circuitry, and communication buses to ensure reliable integration with team member's controllers.</p>
   </div>
 </article>
 
@@ -72,14 +71,14 @@ Create a **custom ESP32 PCB** that:
 ## System Architecture
 
 - **ESP32‑WROOM module** for Wi‑Fi  
-- **On‑board 3.3 V LDO** with proper decoupling and ground stitching  
+- **On‑board 3.3 V buck regulator** with proper decoupling
 - **GPIO breakout** for sensors, actuators, and debugging  
 - **UART headers** for communication with the main controller  
 - **MQTT firmware hooks** for publish/subscribe messaging  
 - **Topic structure** used during development:  
-  - `team202/status/*`  
-  - `team202/cmd/*`  
-  - `team202/sensors/*`  
+  - `team202/sub*`  
+  - `team202/rpm*`  
+  - `team202/sensor*`  
 
 MQTT was primarily used as a **status screen**, allowing users and team to see real-time data.
 
