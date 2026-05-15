@@ -474,7 +474,7 @@
 <hr>
 <h2 id="overview">Overview</h2>
 <p>This STEM project introduces students to embedded systems through modular sensing, actuation, human interface, and wireless communication.<br>
-Luis designed the <strong>ESP32 wireless module</strong>, including schematic capture, PCB layout, and interface definition. The board provided Wi‑Fi connectivity and MQTT publishing/subscribing which was used for team testing and inter‑module communication.</p>
+Luis designed the <strong>ESP32 wireless module</strong>, which include schematic capture, PCB layout, and interface definition. The board provided Wi‑Fi connectivity and MQTT publishing/subscribing which was used for team testing and inter‑module communication.</p>
 <hr>
 <h2 id="problem-statement">Problem Statement</h2>
 <p>The team needed a hardware module that could:</p>
@@ -483,7 +483,7 @@ Luis designed the <strong>ESP32 wireless module</strong>, including schematic ca
 <li>Support MQTT‑based messaging for coordination  </li>
 <li>Receive and deliver messages from team</li>
 <li>Fit within the project’s mechanical constraints  </li>
-<li>Deliver power to team </li>
+<li>Deliver power to team subsystems</li>
 </ul>
 <hr>
 <h2 id="objective">Objective</h2>
@@ -492,8 +492,7 @@ Luis designed the <strong>ESP32 wireless module</strong>, including schematic ca
 <li>Integrates Wi‑Fi and MQTT capability  </li>
 <li>Provides clean 3.3 V regulation and proper decoupling  </li>
 <li>Breaks out GPIOs for sensors, actuators, and debugging  </li>
-<li>Supports UART/I2C communication with the main controller  </li>
-<li>Fits the mechanical footprint of the team’s enclosure  </li>
+<li>Supports UART communication with team by complying with messaging system.</li>
 </ul>
 <hr>
 <h2 id="technical-approach">Technical Approach</h2>
@@ -502,8 +501,8 @@ Luis designed the <strong>ESP32 wireless module</strong>, including schematic ca
 <article class="project-card">
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../EmbSysProj/RL_PCB.jpg" data-desc-position="bottom"><img class="project-thumb" src="../EmbSysProj/RL_PCB.jpg" alt="ESP32 Wi-Fi subsystem PCB"></a>
   <div>
-    <p class="project-meta"><span class="project-title">PCB Design</span><span class="kv">4‑Layer · ESP32‑WROOM</span></p>
-    <p class="project-summary">Designed a compact PCB integrating the ESP32 module, power regulation, decoupling, and GPIO expansion for the team’s sensing modules.</p>
+    <p class="project-meta"><span class="project-title">PCB Design</span><span class="kv">2‑Layer · ESP32‑WROOM</span></p>
+    <p class="project-summary">Designed a PCB integrating the ESP32 module, power regulation, decoupling, and GPIO expansion for the team’s messaging system and power delivery.</p>
   </div>
 </article>
 
@@ -511,7 +510,7 @@ Luis designed the <strong>ESP32 wireless module</strong>, including schematic ca
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../EmbSysProj/TopPCB_Luis.png" data-desc-position="bottom"><img class="project-thumb" src="../EmbSysProj/TopPCB_Luis.png" alt="Firmware debugging"></a>
   <div>
     <p class="project-meta"><span class="project-title">Schematic &amp; Interfaces</span><span class="kv">Power · GPIO · UART/I2C</span></p>
-    <p class="project-summary">Created schematics defining power paths, protection circuitry, and communication buses to ensure reliable integration with the main controller.</p>
+    <p class="project-summary">Created schematics defining power paths, protection circuitry, and communication buses to ensure reliable integration with team member's controllers.</p>
   </div>
 </article>
 
@@ -521,14 +520,14 @@ Luis designed the <strong>ESP32 wireless module</strong>, including schematic ca
 <h2 id="system-architecture">System Architecture</h2>
 <ul>
 <li><strong>ESP32‑WROOM module</strong> for Wi‑Fi  </li>
-<li><strong>On‑board 3.3 V LDO</strong> with proper decoupling and ground stitching  </li>
+<li><strong>On‑board 3.3 V buck regulator</strong> with proper decoupling</li>
 <li><strong>GPIO breakout</strong> for sensors, actuators, and debugging  </li>
 <li><strong>UART headers</strong> for communication with the main controller  </li>
 <li><strong>MQTT firmware hooks</strong> for publish/subscribe messaging  </li>
 <li><strong>Topic structure</strong> used during development:  </li>
-<li><code>team202/status/*</code>  </li>
-<li><code>team202/cmd/*</code>  </li>
-<li><code>team202/sensors/*</code>  </li>
+<li><code>team202/sub*</code>  </li>
+<li><code>team202/rpm*</code>  </li>
+<li><code>team202/sensor*</code>  </li>
 </ul>
 <p>MQTT was primarily used as a <strong>status screen</strong>, allowing users and team to see real-time data.</p>
 <hr>
