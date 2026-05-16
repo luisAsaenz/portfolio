@@ -383,12 +383,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Hardware Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#electrical-design-and-interfaces" class="md-nav__link">
+  <a href="#pcb-design" class="md-nav__link">
     <span class="md-ellipsis">
-      Electrical Design and Interfaces
+      PCB Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actuator-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actuator Interfaces
     </span>
   </a>
   
@@ -401,6 +434,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Firmware and Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Interface
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Images
+    </span>
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -409,6 +466,30 @@
       Integration and Testing
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Integration and Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mechanical-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mechanical Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -419,12 +500,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Results and Reflection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deliverables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deliverables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skills-strengthened" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skills Strengthened
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Improvements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#assets-and-credits" class="md-nav__link">
+  <a href="#credits" class="md-nav__link">
     <span class="md-ellipsis">
-      Assets and Credits
+      Credits
     </span>
   </a>
   
@@ -464,7 +578,7 @@
 
 <div class="hero">
   <h1>Ceiling‑Mounted Drone Docking System</h1>
-  <p class="lead">Custom embedded controller and actuator interface enabling a ceiling‑mounted docking mechanism for autonomous drone retrieval.</p>
+  <p class="lead">Custom embedded controller and actuator interface enabling a ceiling‑mounted docking mechanism for autonomous drone retrieval and controlled release.</p>
   <div>
     <a class="hero-cta primary" href="../projects/">← Back to Projects</a>
     <a class="hero-cta ghost" href="https://github.com/luisasaenz/STEM-DAM">Repository</a>
@@ -474,86 +588,150 @@
 <hr>
 <h2 id="overview">Overview</h2>
 <p>This project implements a <strong>ceiling‑mounted docking mechanism</strong> designed to secure and release a quadcopter.<br>
-<strong>Role:</strong> Electrical, software, and team lead.<br>
-<strong>Dates:</strong> 09/2025 – 05/2026.<br>
-Luis designed the <strong>embedded controller</strong>, <strong>actuator interface</strong>, and <strong>custom PCB</strong> that drive a linear actuator, a locking solenoid, and four servos to perform the docking sequence.</p>
+<strong>Role:</strong> Electrical, software, and team lead<br>
+<strong>Dates:</strong> 09/2025 – 05/2026  </p>
+<p>Luis designed the <strong>embedded controller</strong>, <strong>actuator interface</strong>, and <strong>custom PCB</strong> that drive a linear actuator, a locking solenoid, and four servos to perform the docking sequence.</p>
 <hr>
 <h2 id="hardware-summary">Hardware Summary</h2>
-<p><strong>Key components</strong>
-- <strong>MCUs:</strong> Arduino Uno 3 (peripheral controller), Raspberry Pi 5 (server)<br>
-- <strong>Locking actuator:</strong> FIT0620 (electric solenoid) driven via relay breakout<br>
-- <strong>Linear actuator:</strong> PQR12-100-6-R<br>
-- <strong>Servos:</strong> 4 × 180° (p# ser0064)<br>
-- <strong>Power:</strong> three 6 V buck regulators, one 12 V buck regulator; resettable fuses; terminal blocks; GPIO headers<br>
-- <strong>Protection:</strong> TVS diodes; resettable fuses; flyback diodes (implemented where applicable)</p>
-<p><strong>PCB</strong>
-- <strong>Stackup:</strong> 2‑layer board; top and bottom used as ground planes<br>
-- <strong>Layout strategy:</strong> power pours on top, signal traces on bottom; compact form factor to fit inside the ceiling enclosure; mounting holes included though enclosure mounting was not finalized<br>
-- <strong>Tools:</strong> Cadence (design files not shared)</p>
+<h3 id="key-components">Key Components</h3>
+<ul>
+<li><strong>MCUs:</strong> Arduino Uno 3 (peripheral controller), Raspberry Pi 5 (server)  </li>
+<li><strong>Locking actuator:</strong> FIT0620 (electric solenoid) via relay breakout  </li>
+<li><strong>Linear actuator:</strong> PQR12-100-6-R  </li>
+<li><strong>Servos:</strong> 4 × 180° (p# ser0064)  </li>
+<li><strong>Power:</strong> three 6 V buck regulators, one 12 V buck regulator  </li>
+<li><strong>Protection:</strong> TVS diodes, resettable fuses, flyback diodes  </li>
+<li><strong>Connectivity:</strong> terminal blocks, GPIO headers</li>
+</ul>
 <hr>
-<h2 id="electrical-design-and-interfaces">Electrical Design and Interfaces</h2>
-<p><strong>Power distribution</strong>
-- <strong>Three 6 V regulators</strong> (one configurable to ~7 V via feedback resistor for MCU rail; 500–900 mA budget)<br>
-  - Reg A: MCU rail (adjustable)<br>
-  - Reg B: Servos (combined 1.8–2 A per servo budget)<br>
-  - Reg C: Linear actuator (200–300 mA)<br>
-- <strong>12 V regulator</strong> for locking actuator (200–300 mA)</p>
-<p><strong>Actuator interfaces</strong>
-- <strong>Linear actuator:</strong> PWM control from Arduino (pin 3) via motor driver interface<br>
-- <strong>Servos:</strong> PWM channels on Arduino (pins 5, 6, 9, 10) with dedicated 6 V servo rail and common ground<br>
-- <strong>Locking solenoid:</strong> driven by relay breakout controlled from Arduino GPIO (relay logic on digital outputs); solenoid state read on a digital input (pin 7)<br>
-- <strong>Communications:</strong> UART between Arduino and Raspberry Pi 5 (Arduino RX on pin 11 used as software UART)<br>
-- <strong>Debugging:</strong> terminal blocks for UART and LEDs; SW-style debug headers included</p>
-<p><strong>Protection and safety</strong>
-- TVS diodes and resettable fuses on power rails; flyback diodes used on inductive loads where applicable.</p>
+<h2 id="pcb-design">PCB Design</h2>
+<ul>
+<li><strong>2‑layer board</strong>  </li>
+<li><strong>Top and bottom ground planes</strong>  </li>
+<li><strong>Power pours on top</strong>, <strong>signal routing on bottom</strong>  </li>
+<li>Designed to fit inside the ceiling enclosure with limited space  </li>
+<li>Included mounting holes even though enclosure lacked mounting points  </li>
+<li>Designed in <strong>Cadence</strong> (files not shared)</li>
+</ul>
+<hr>
+<h2 id="power-architecture">Power Architecture</h2>
+<ul>
+<li><strong>Regulator A (6–7 V adjustable):</strong> MCU rail (500–900 mA)  </li>
+<li><strong>Regulator B (6 V):</strong> Servo rail (1.8–2 A combined)  </li>
+<li><strong>Regulator C (6 V):</strong> Linear actuator (200–300 mA)  </li>
+<li><strong>12 V regulator:</strong> Locking actuator (200–300 mA)</li>
+</ul>
+<hr>
+<h2 id="actuator-interfaces">Actuator Interfaces</h2>
+<ul>
+<li><strong>Arduino Uno 3</strong> controller that pins are connected to.</li>
+<li><strong>Linear actuator:</strong> PWM pin 3  </li>
+<li><strong>Servos:</strong> PWM on pins 5, 6, 9, 10  </li>
+<li><strong>Solenoid:</strong> Relay breakout controlled via digital output  </li>
+<li><strong>Solenoid state:</strong> Read via digital input 7  </li>
+<li><strong>UART:</strong> Arduino ↔ Raspberry Pi 5 (Arduino RX on pin 11 via software UART)</li>
+</ul>
 <hr>
 <h2 id="firmware-and-control">Firmware and Control</h2>
-<p><strong>Responsibilities implemented</strong>
-- Sequencing and stage control for opening, closing, and release operations<br>
-- PWM generation for servos and linear actuator; helper function to map 0–100% stroke to PWM values per actuator datasheet<br>
-- Relay control and solenoid timing with safety interlocks and timeouts<br>
-- UART command interface for manual testing and server control</p>
-<p><strong>Command interface (serial)</strong>
-- <code>next</code> — advance to next stage<br>
-- <code>back</code> — return to previous stage<br>
-- <code>start</code> — enable autonomous open/close/release sequences after configuration<br>
-- <code>quit</code> — abort and reset to stage zero</p>
-<p><strong>Notes</strong>
-- Firmware organized into discrete "stages" to allow stepwise testing and safe handoff between manual and autonomous operation.<br>
-- Used AI tools to accelerate debugging and to scaffold the Raspberry Pi server that relays commands to the Arduino.</p>
+<p>The firmware manages sequencing, actuator timing, servo positioning, and safety logic.<br>
+It also provides a simple serial‑based interface for manual testing and for the Raspberry Pi server.</p>
+<h3 id="command-interface">Command Interface</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>next</code></td>
+<td>Advance to the next stage</td>
+</tr>
+<tr>
+<td><code>back</code></td>
+<td>Return to the previous stage</td>
+</tr>
+<tr>
+<td><code>start</code></td>
+<td>Enable demo open/close/release sequences after configuration</td>
+</tr>
+<tr>
+<td><code>quit</code></td>
+<td>Abort and reset to stage zero</td>
+</tr>
+</tbody>
+</table>
+<p>The system is organized into discrete “stages” to allow controlled testing of each mechanical action.<br>
+Commands can be issued from the serial monitor or from the Raspberry Pi server.</p>
+<hr>
+<h2 id="hardware-images">Hardware Images</h2>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+
+<div>
+  <h4>PCB Layout</h4>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="path/to/pcb_layout.png" data-desc-position="bottom"><img src="path/to/pcb_layout.png" alt="PCB Layout"></a>
+</div>
+
+<div>
+  <h4>Schematic</h4>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="path/to/schematic.png" data-desc-position="bottom"><img src="path/to/schematic.png" alt="Schematic"></a>
+</div>
+
+<div>
+  <h4>Enclosure Assembly</h4>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="path/to/enclosure.png" data-desc-position="bottom"><img src="path/to/enclosure.png" alt="Enclosure Assembly"></a>
+</div>
+
+<div>
+  <h4>Manufactured PCB</h4>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="path/to/real_pcb.png" data-desc-position="bottom"><img src="path/to/real_pcb.png" alt="Real PCB"></a>
+</div>
+
+</div>
+
 <hr>
 <h2 id="integration-and-testing">Integration and Testing</h2>
-<p><strong>Mechanical integration</strong>
-- PCB sized to fit between enclosure doors; wiring left exposed for demonstration; four PCB mounting holes provided though not fastened to the enclosure in final demo.</p>
-<p><strong>Key tests and outcomes</strong>
-- <strong>Actuation sequencing:</strong> reliable open/close sequences implemented and repeatable under test conditions.<br>
-- <strong>Solenoid holding:</strong> evaluated whether solenoid/magnet arrangement could retain the drone and release reliably; required mechanical adjustments to the drone harness.<br>
-- <strong>Material failure:</strong> PLA inner gear shafts failed under servo torque (~80% failure). Replaced with D‑type shafts to handle torque.<br>
-- <strong>Linear actuator range:</strong> actuator stroke alone could not separate drone from magnets; team added prongs to the drone harness to increase separation and enable release.<br>
-- <strong>Servo torque/locking:</strong> servo/geartrain could not reliably provide locking torque in the original gear design; mechanical redesign required for robust locking.</p>
-<p><strong>Known limitations</strong>
-- No position feedback implemented (open‑loop control).<br>
-- Wiring harness and enclosure mounting were left exposed for the prototype demonstration.<br>
-- Some protection components (flyback diodes placement) were iterated during testing.</p>
+<h3 id="mechanical-integration">Mechanical Integration</h3>
+<ul>
+<li>PCB positioned between enclosure doors  </li>
+<li>Wiring left exposed for demonstration  </li>
+<li>No enclosure mounting points; PCB included its own mounting holes</li>
+</ul>
+<h3 id="key-tests">Key Tests</h3>
+<ul>
+<li>Verified actuator sequencing and timing  </li>
+<li>Evaluated solenoid holding and release behavior  </li>
+<li>Identified PLA gear shaft failures (80% failure rate) → replaced with D‑shaft  </li>
+<li>Linear actuator stroke insufficient → added prongs to drone harness  </li>
+<li>Servo torque or inner gear assembly and driving gear is insufficient for locking → mechanical redesign required</li>
+</ul>
 <hr>
 <h2 id="results-and-reflection">Results and Reflection</h2>
-<p><strong>Deliverables</strong>
-- Custom 2‑layer PCB integrating actuator drivers, power regulation, and MCU interfaces<br>
-- Firmware for staged sequencing, PWM control, and UART command handling<br>
-- Prototype enclosure integration and demonstration-ready hardware</p>
-<p><strong>Skills strengthened</strong>
-- PCB design for actuator‑driven systems; power distribution and high‑current switching; firmware sequencing and safety interlocks; cross‑discipline coordination with mechanical and systems teams.</p>
-<p><strong>Future improvements</strong>
-- Add position feedback (limit switches or encoders) for closed‑loop control<br>
-- Harden mechanical interfaces and replace PLA parts with stronger materials or redesigned geometry<br>
-- Implement a harnessed wiring solution and enclosure mounting points for production readiness</p>
+<h3 id="deliverables">Deliverables</h3>
+<ul>
+<li>Custom 2‑layer PCB integrating all actuators and power rails  </li>
+<li>Firmware for staged sequencing, PWM control, and UART interface  </li>
+<li>Demonstration‑ready prototype</li>
+</ul>
+<h3 id="skills-strengthened">Skills Strengthened</h3>
+<ul>
+<li>PCB design for actuator‑driven systems  </li>
+<li>Power distribution and high‑current switching  </li>
+<li>Firmware sequencing and safety logic  </li>
+<li>Cross‑discipline coordination with mechanical team</li>
+</ul>
+<h3 id="future-improvements">Future Improvements</h3>
+<ul>
+<li>Add position feedback (limit switches or encoders)  </li>
+<li>Improve mechanical robustness (material + geometry)  </li>
+<li>Add proper wiring harness and enclosure mounting solution  </li>
+</ul>
 <hr>
-<h2 id="assets-and-credits">Assets and Credits</h2>
-<p><strong>Files and assets</strong>
-- Board and enclosure images available on request for inclusion in the case study (user will provide).<br>
-- Design files created in Cadence (not shared).</p>
-<p><strong>Team credit</strong>
-- <strong>Emerson Wall</strong> — teammate and collaborator</p>
+<h2 id="credits">Credits</h2>
+<ul>
+<li><strong>Emerson Wall</strong> — teammate and collaborator</li>
+</ul>
 <hr>
 <h2 id="links">Links</h2>
 <ul>
