@@ -116,7 +116,7 @@ Commands can be issued from the serial monitor or from the Raspberry Pi server.
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
   <figure>
     <h4>Schematic – Page 1</h4>
-    <img src="./../Projects/CMDEProj/schmpg1.png" alt="Schematic Page 1" style="width:100%;height:auto;display:block;">
+    <img src="../CMDEProj/schmpg1.png" alt="Schematic Page 1" style="width:100%;height:auto;display:block;">
   </figure>
 
   <figure>
