@@ -94,22 +94,32 @@ Commands can be issued from the serial monitor or from the Raspberry Pi server.
 
 <div>
   <h4>PCB Layout</h4>
-  <img src="path/to/pcb_layout.png" alt="PCB Layout">
+  <img src="../CMDEProj/gerber_pcb.png" alt="PCB Layout">
 </div>
 
 <div>
-  <h4>Schematic</h4>
-  <img src="path/to/schematic.png" alt="Schematic">
+  <h4>Schematic – Page 1</h4>
+  <img src="../CMDEProj/schmpg1.png" alt="Schematic Page 1">
+</div>
+
+<div>
+  <h4>Schematic – Page 2</h4>
+  <img src="../CMDEProj/schmpg2.png" alt="Schematic Page 2">
+</div>
+
+<div>
+  <h4>Schematic – Page 3</h4>
+  <img src="../CMDEProj/schmpg3.png" alt="Schematic Page 3">
 </div>
 
 <div>
   <h4>Enclosure Assembly</h4>
-  <img src="path/to/enclosure.png" alt="Enclosure Assembly">
+  <img src="../CMDEProj/enclosure.png" alt="Enclosure Assembly">
 </div>
 
 <div>
   <h4>Manufactured PCB</h4>
-  <img src="path/to/real_pcb.png" alt="Real PCB">
+  <img src="../CMDEProj/PCB_nocomponents.png" alt="Real PCB">
 </div>
 
 </div>
