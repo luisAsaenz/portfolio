@@ -377,54 +377,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem-statement" class="md-nav__link">
+  <a href="#hardware-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Problem Statement
+      Hardware Summary
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
+  <a href="#electrical-design-and-interfaces" class="md-nav__link">
     <span class="md-ellipsis">
-      Objective
+      Electrical Design and Interfaces
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#technical-approach" class="md-nav__link">
+  <a href="#firmware-and-control" class="md-nav__link">
     <span class="md-ellipsis">
-      Technical Approach
+      Firmware and Control
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#system-architecture" class="md-nav__link">
+  <a href="#integration-and-testing" class="md-nav__link">
     <span class="md-ellipsis">
-      System Architecture
+      Integration and Testing
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#results" class="md-nav__link">
+  <a href="#results-and-reflection" class="md-nav__link">
     <span class="md-ellipsis">
-      Results
+      Results and Reflection
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reflection" class="md-nav__link">
+  <a href="#assets-and-credits" class="md-nav__link">
     <span class="md-ellipsis">
-      Reflection
+      Assets and Credits
     </span>
   </a>
   
@@ -473,87 +473,92 @@
 
 <hr>
 <h2 id="overview">Overview</h2>
-<p>This project implements a <strong>ceiling‑mounted docking mechanism</strong> designed to secure a quadcopter after flight.<br>
-Luis developed the <strong>embedded controller</strong>, <strong>actuator interface</strong>, and <strong>custom PCB</strong> responsible for driving a linear actuator, a locking solenoid, and four servos used in the docking and release sequence.</p>
-<p>The system focuses on reliable actuation, mechanical alignment, and safe locking/unlocking behavior.</p>
+<p>This project implements a <strong>ceiling‑mounted docking mechanism</strong> designed to secure and release a quadcopter.<br>
+<strong>Role:</strong> Electrical, software, and team lead.<br>
+<strong>Dates:</strong> 09/2025 – 05/2026.<br>
+Luis designed the <strong>embedded controller</strong>, <strong>actuator interface</strong>, and <strong>custom PCB</strong> that drive a linear actuator, a locking solenoid, and four servos to perform the docking sequence.</p>
 <hr>
-<h2 id="problem-statement">Problem Statement</h2>
-<p>The docking system required a compact embedded controller capable of:</p>
-<ul>
-<li>Driving a linear actuator for vertical positioning  </li>
-<li>Controlling a locking solenoid for secure retention  </li>
-<li>Operating four servos for mechanical alignment and stabilization  </li>
-<li>Fitting within the tight mechanical constraints of the ceiling mount  </li>
-<li>Providing clean power and reliable signal routing to all actuators  </li>
-</ul>
-<p>Off‑the‑shelf boards lacked the required actuator layout, power distribution, and interface routing.</p>
+<h2 id="hardware-summary">Hardware Summary</h2>
+<p><strong>Key components</strong>
+- <strong>MCUs:</strong> Arduino Uno 3 (peripheral controller), Raspberry Pi 5 (server)<br>
+- <strong>Locking actuator:</strong> FIT0620 (electric solenoid) driven via relay breakout<br>
+- <strong>Linear actuator:</strong> PQR12-100-6-R<br>
+- <strong>Servos:</strong> 4 × 180° (p# ser0064)<br>
+- <strong>Power:</strong> three 6 V buck regulators, one 12 V buck regulator; resettable fuses; terminal blocks; GPIO headers<br>
+- <strong>Protection:</strong> TVS diodes; resettable fuses; flyback diodes (implemented where applicable)</p>
+<p><strong>PCB</strong>
+- <strong>Stackup:</strong> 2‑layer board; top and bottom used as ground planes<br>
+- <strong>Layout strategy:</strong> power pours on top, signal traces on bottom; compact form factor to fit inside the ceiling enclosure; mounting holes included though enclosure mounting was not finalized<br>
+- <strong>Tools:</strong> Cadence (design files not shared)</p>
 <hr>
-<h2 id="objective">Objective</h2>
-<p>Design a <strong>custom embedded controller</strong> that:</p>
-<ul>
-<li>Integrates actuator drivers, power regulation, and an STM32 microcontroller  </li>
-<li>Provides stable power delivery for high‑current loads (actuator + solenoid)  </li>
-<li>Breaks out servo headers with proper routing and grounding  </li>
-<li>Fits the mechanical footprint of the ceiling‑mounted enclosure  </li>
-<li>Supports firmware hooks for sequencing and safety interlocks  </li>
-</ul>
+<h2 id="electrical-design-and-interfaces">Electrical Design and Interfaces</h2>
+<p><strong>Power distribution</strong>
+- <strong>Three 6 V regulators</strong> (one configurable to ~7 V via feedback resistor for MCU rail; 500–900 mA budget)<br>
+  - Reg A: MCU rail (adjustable)<br>
+  - Reg B: Servos (combined 1.8–2 A per servo budget)<br>
+  - Reg C: Linear actuator (200–300 mA)<br>
+- <strong>12 V regulator</strong> for locking actuator (200–300 mA)</p>
+<p><strong>Actuator interfaces</strong>
+- <strong>Linear actuator:</strong> PWM control from Arduino (pin 3) via motor driver interface<br>
+- <strong>Servos:</strong> PWM channels on Arduino (pins 5, 6, 9, 10) with dedicated 6 V servo rail and common ground<br>
+- <strong>Locking solenoid:</strong> driven by relay breakout controlled from Arduino GPIO (relay logic on digital outputs); solenoid state read on a digital input (pin 7)<br>
+- <strong>Communications:</strong> UART between Arduino and Raspberry Pi 5 (Arduino RX on pin 11 used as software UART)<br>
+- <strong>Debugging:</strong> terminal blocks for UART and LEDs; SW-style debug headers included</p>
+<p><strong>Protection and safety</strong>
+- TVS diodes and resettable fuses on power rails; flyback diodes used on inductive loads where applicable.</p>
 <hr>
-<h2 id="technical-approach">Technical Approach</h2>
-<div class="projects-grid">
-
-<article class="project-card">s
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../CMDEProj/TopPCB_Luis.png" data-desc-position="bottom"><img class="project-thumb" src="../CMDEProj/TopPCB_Luis.png" alt="Docking controller PCB"></a>
-  <div>
-    <p class="project-meta"><span class="project-title">PCB Design</span><span class="kv">4‑Layer · STM32</span></p>
-    <p class="project-summary">Designed a compact 4‑layer PCB integrating actuator drivers, power regulation, and an STM32 microcontroller for docking control.</p>
-  </div>
-</article>
-
-<article class="project-card">
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../CMDEProj/firmware_debug.jpg" data-desc-position="bottom"><img class="project-thumb" src="../CMDEProj/firmware_debug.jpg" alt="Firmware debugging"></a>
-  <div>
-    <p class="project-meta"><span class="project-title">Schematic &amp; Interfaces</span><span class="kv">Actuators · Power · Control</span></p>
-    <p class="project-summary">Created schematics defining actuator outputs, solenoid drive circuitry, servo headers, and power paths for reliable operation.</p>
-  </div>
-</article>
-
-</div>
-
+<h2 id="firmware-and-control">Firmware and Control</h2>
+<p><strong>Responsibilities implemented</strong>
+- Sequencing and stage control for opening, closing, and release operations<br>
+- PWM generation for servos and linear actuator; helper function to map 0–100% stroke to PWM values per actuator datasheet<br>
+- Relay control and solenoid timing with safety interlocks and timeouts<br>
+- UART command interface for manual testing and server control</p>
+<p><strong>Command interface (serial)</strong>
+- <code>next</code> — advance to next stage<br>
+- <code>back</code> — return to previous stage<br>
+- <code>start</code> — enable autonomous open/close/release sequences after configuration<br>
+- <code>quit</code> — abort and reset to stage zero</p>
+<p><strong>Notes</strong>
+- Firmware organized into discrete "stages" to allow stepwise testing and safe handoff between manual and autonomous operation.<br>
+- Used AI tools to accelerate debugging and to scaffold the Raspberry Pi server that relays commands to the Arduino.</p>
 <hr>
-<h2 id="system-architecture">System Architecture</h2>
-<ul>
-<li><strong>STM32 microcontroller</strong> for actuator sequencing and safety logic  </li>
-<li><strong>Linear actuator output</strong> with motor driver interface  </li>
-<li><strong>Locking solenoid output</strong> with protected high‑current switching  </li>
-<li><strong>Four servo channels</strong> for mechanical alignment and stabilization  </li>
-<li><strong>5 V and 3.3 V regulation</strong> with proper decoupling and ground stitching  </li>
-<li><strong>Debug headers</strong> for firmware development and testing  </li>
-</ul>
-<p>The system was designed to be electrically robust and mechanically compact to ensure consistent operation inside the ceiling‑mounted enclosure.</p>
+<h2 id="integration-and-testing">Integration and Testing</h2>
+<p><strong>Mechanical integration</strong>
+- PCB sized to fit between enclosure doors; wiring left exposed for demonstration; four PCB mounting holes provided though not fastened to the enclosure in final demo.</p>
+<p><strong>Key tests and outcomes</strong>
+- <strong>Actuation sequencing:</strong> reliable open/close sequences implemented and repeatable under test conditions.<br>
+- <strong>Solenoid holding:</strong> evaluated whether solenoid/magnet arrangement could retain the drone and release reliably; required mechanical adjustments to the drone harness.<br>
+- <strong>Material failure:</strong> PLA inner gear shafts failed under servo torque (~80% failure). Replaced with D‑type shafts to handle torque.<br>
+- <strong>Linear actuator range:</strong> actuator stroke alone could not separate drone from magnets; team added prongs to the drone harness to increase separation and enable release.<br>
+- <strong>Servo torque/locking:</strong> servo/geartrain could not reliably provide locking torque in the original gear design; mechanical redesign required for robust locking.</p>
+<p><strong>Known limitations</strong>
+- No position feedback implemented (open‑loop control).<br>
+- Wiring harness and enclosure mounting were left exposed for the prototype demonstration.<br>
+- Some protection components (flyback diodes placement) were iterated during testing.</p>
 <hr>
-<h2 id="results">Results</h2>
-<ul>
-<li>Delivered a fully functional embedded controller used in the docking prototype  </li>
-<li>Provided reliable control of actuator, solenoid, and servo mechanisms  </li>
-<li>Enabled repeatable docking and release sequences during testing  </li>
-<li>Supported iterative firmware development through accessible debugging headers  </li>
-</ul>
+<h2 id="results-and-reflection">Results and Reflection</h2>
+<p><strong>Deliverables</strong>
+- Custom 2‑layer PCB integrating actuator drivers, power regulation, and MCU interfaces<br>
+- Firmware for staged sequencing, PWM control, and UART command handling<br>
+- Prototype enclosure integration and demonstration-ready hardware</p>
+<p><strong>Skills strengthened</strong>
+- PCB design for actuator‑driven systems; power distribution and high‑current switching; firmware sequencing and safety interlocks; cross‑discipline coordination with mechanical and systems teams.</p>
+<p><strong>Future improvements</strong>
+- Add position feedback (limit switches or encoders) for closed‑loop control<br>
+- Harden mechanical interfaces and replace PLA parts with stronger materials or redesigned geometry<br>
+- Implement a harnessed wiring solution and enclosure mounting points for production readiness</p>
 <hr>
-<h2 id="reflection">Reflection</h2>
-<p>This project strengthened Luis’s experience in:</p>
-<ul>
-<li>PCB design for actuator‑driven embedded systems  </li>
-<li>Schematic capture and interface definition  </li>
-<li>Power regulation and high‑current switching  </li>
-<li>Firmware design for sequencing and safety interlocks  </li>
-<li>Integrating embedded hardware into constrained mechanical systems  </li>
-</ul>
-<p>Future improvements include adding position feedback, refining actuator control, and optimizing the PCB layout for manufacturability.</p>
+<h2 id="assets-and-credits">Assets and Credits</h2>
+<p><strong>Files and assets</strong>
+- Board and enclosure images available on request for inclusion in the case study (user will provide).<br>
+- Design files created in Cadence (not shared).</p>
+<p><strong>Team credit</strong>
+- <strong>Emerson Wall</strong> — teammate and collaborator</p>
 <hr>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://egr314-2025-s-202.github.io/team202.github.io/">Team Website</a>  </li>
-<li><a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/">Datasheet Sections</a>  </li>
+<li><a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/">Datasheet Template</a>  </li>
 <li><a href="../../subfolder/Mechatronic.pdf">Resume (PDF)</a></li>
 </ul>
 
