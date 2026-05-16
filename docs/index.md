@@ -25,7 +25,7 @@ tags: [portfolio, projects, embedded, firmware]
   <div>
     <p class="project-meta"><span class="project-title">Ceiling-mounted Drone Enclosure</span><span class="kv">Arduino · Raspberry Pi5 · Embedded-Systems · PCB Design</span></p>
     <p class="project-summary">Axon needed a reliable ceiling‑mounted drone docking system → so I designed a custom embedded controller and actuator interface, enabling repeatable autonomous docking and release during testing.</p>
-    <p style="margin-top:8px;"><a href="Projects/cmdeproj.md" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
+    <p style="margin-top:8px;"><a href="Projects/cmdep" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
   </div>
 </article>
 
