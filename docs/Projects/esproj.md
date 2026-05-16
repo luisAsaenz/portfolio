@@ -76,9 +76,9 @@ Create a **custom ESP32 PCB** that:
 - **UART headers** for communication with the main controller  
 - **MQTT firmware hooks** for publish/subscribe messaging  
 - **Topic structure** used during development:  
-  - `team202/sub*`  
-  - `team202/rpm*`  
-  - `team202/sensor*`  
+    - `team202/sub*`  
+    - `team202/rpm*`  
+    - `team202/sensor*`  
 
 MQTT was primarily used as a **status screen**, allowing users and team to see real-time data.
 
