@@ -8,7 +8,7 @@ tags: [case-study, embedded, stm32, pcb, schematic, actuators]
   <p class="lead">Custom embedded controller and actuator interface enabling a ceiling‑mounted docking mechanism for autonomous drone retrieval and controlled release.</p>
   <div>
     <a class="hero-cta primary" href="../projects/">← Back to Projects</a>
-    <a class="hero-cta ghost" href=".../subfolder/Mechatronic.pdf">Resume</a>
+    <a class="hero-cta ghost" href="../subfolder/Mechatronic.pdf">Resume</a>
   </div>
 </div>
 
@@ -98,21 +98,6 @@ Commands can be issued from the serial monitor or from the Raspberry Pi server.
 </div>
 
 <div>
-  <h4>Schematic – Page 1</h4>
-  <img src="../CMDEProj/schmpg1.png" alt="Schematic Page 1">
-</div>
-
-<div>
-  <h4>Schematic – Page 2</h4>
-  <img src="../CMDEProj/schmpg2.png" alt="Schematic Page 2">
-</div>
-
-<div>
-  <h4>Schematic – Page 3</h4>
-  <img src="../CMDEProj/schmpg3.png" alt="Schematic Page 3">
-</div>
-
-<div>
   <h4>Enclosure Assembly</h4>
   <img src="../CMDEProj/enclosure.png" alt="Enclosure Assembly">
 </div>
@@ -123,6 +108,30 @@ Commands can be issued from the serial monitor or from the Raspberry Pi server.
 </div>
 
 </div>
+
+---
+
+### Schematic (3 Pages)
+
+???+ note "Click to expand schematic pages"
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+
+    <div>
+      <h4>Schematic – Page 1</h4>
+      <img src="../CMDEProj/schmpg1.png" alt="Schematic Page 1">
+    </div>
+
+    <div>
+      <h4>Schematic – Page 2</h4>
+      <img src="../CMDEProj/schmpg2.png" alt="Schematic Page 2">
+    </div>
+
+    <div>
+      <h4>Schematic – Page 3</h4>
+      <img src="../CMDEProj/schmpg3.png" alt="Schematic Page 3">
+    </div>
+
+    </div>
 
 ---
 
