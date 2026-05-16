@@ -8,7 +8,7 @@ tags: [case-study, embedded, stm32, pcb, schematic, actuators]
   <p class="lead">Custom embedded controller and actuator interface enabling a ceiling‑mounted docking mechanism for autonomous drone retrieval and controlled release.</p>
   <div>
     <a class="hero-cta primary" href="../projects/">← Back to Projects</a>
-    <a class="hero-cta ghost" href="https://github.com/luisasaenz/STEM-DAM">Repository</a>
+    <a class="hero-cta ghost" href=".../subfolder/Mechatronic.pdf">Resume</a>
   </div>
 </div>
 
