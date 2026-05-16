@@ -113,7 +113,6 @@ Commands can be issued from the serial monitor or from the Raspberry Pi server.
 ### Schematic (3 Pages)
 
 ???+ note "Click to expand schematic pages"
-    ```html
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
         <div>
             <h4>Schematic – Page 1</h4>
@@ -130,7 +129,6 @@ Commands can be issued from the serial monitor or from the Raspberry Pi server.
             <img src="../CMDEProj/schmpg3.png" alt="Schematic Page 3">
         </div>
     </div>
-    ```
 
 ## Integration and Testing
 

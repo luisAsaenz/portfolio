@@ -6,12 +6,12 @@ theme:
   name: material
   custom_dir: custom_theme/partials
   palette:
-    primary: blue
+    primary: black
     accent: indigo
   font:
     text: Roboto
   logo: static/logo314.svg
-  favicon: static/logo314.png
+  favicon: Projects/CMDEProj/gerber_pcb.png
 
   features:
     - navigation.tabs
@@ -32,6 +32,7 @@ markdown_extensions:
   - attr_list #add attributes using curly brackets to images, see https://squidfunk.github.io/mkdocs-material/reference/images/
   - md_in_html # see https://squidfunk.github.io/mkdocs-material/reference/images/
   - footnotes
+  - admonition
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.tilde: {}
