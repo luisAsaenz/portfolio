@@ -110,25 +110,27 @@ Commands can be issued from the serial monitor or from the Raspberry Pi server.
 </div>
 
 ---
-### Schematic (3 Pages)
+<details>
+<summary><strong>Click to expand schematic pages</strong></summary>
 
-???+ note "Click to expand schematic pages"
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-        <div>
-            <h4>Schematic – Page 1</h4>
-            <img src="../CMDEProj/schmpg1.png" alt="Schematic Page 1">
-        </div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+  <figure>
+    <h4>Schematic – Page 1</h4>
+    <img src="/Projects/CMDEProj/schmpg1.png" alt="Schematic Page 1" style="width:100%;height:auto;display:block;">
+  </figure>
 
-        <div>
-            <h4>Schematic – Page 2</h4>
-            <img src="../CMDEProj/schmpg2.png" alt="Schematic Page 2">
-        </div>
+  <figure>
+    <h4>Schematic – Page 2</h4>
+    <img src="/Projects/CMDEProj/schmpg2.png" alt="Schematic Page 2" style="width:100%;height:auto;display:block;">
+  </figure>
 
-        <div>
-            <h4>Schematic – Page 3</h4>
-            <img src="../CMDEProj/schmpg3.png" alt="Schematic Page 3">
-        </div>
-    </div>
+  <figure>
+    <h4>Schematic – Page 3</h4>
+    <img src="/Projects/CMDEProj/schmpg3.png" alt="Schematic Page 3" style="width:100%;height:auto;display:block;">
+  </figure>
+</div>
+
+</details>
 
 ## Integration and Testing
 
