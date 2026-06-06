@@ -10,8 +10,8 @@ theme:
     accent: indigo
   font:
     text: Roboto
-  logo: Projects/static/squid.svg
-  favicon: Projects/static/squid.png
+  logo: static/squid.svg
+  favicon: static/squid.png
 
   features:
     - navigation.tabs
