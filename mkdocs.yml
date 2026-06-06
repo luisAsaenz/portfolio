@@ -10,8 +10,8 @@ theme:
     accent: indigo
   font:
     text: Roboto
-  logo: Projects/CMDEProj/gerber_pcb.svg
-  favicon: Projects/CMDEProj/gerber_pcb.png
+  logo: Projects/static/squid.svg
+  favicon: Projects/static/squid.png
 
   features:
     - navigation.tabs
