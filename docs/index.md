@@ -35,7 +35,7 @@ tags: [portfolio, projects, embedded, firmware]
   <div>
     <p class="project-meta"><span class="project-title">STM32 DEV BOARD</span><span class="kv">KiCad · ESD protection · RF · STM32 · JLCPCB DFM</span></p>
     <p class="project-summary">NEEDS SUMMARY.</p>
-    <p style="margin-top:8px;"><a href="Projects/esproj" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
+    <p style="margin-top:8px;"><a href="Projects/stmdevb" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
   </div>
 </article>
 
