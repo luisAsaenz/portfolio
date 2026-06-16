@@ -21,7 +21,7 @@ COMING SOON
 
 ## Objective
 
-Create a **custom STM32 PCB** that:
+Create a **custom RC/WIFI Controller PCB** that:
 
 - Hand-solderable, compact 4-layer board for prototyping
 - USB programming and debugging via USB interface
