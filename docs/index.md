@@ -41,6 +41,16 @@ tags: [portfolio, projects, embedded, firmware]
 
 <!-- Project 3 -->
 <article class="project-card">
+  <img class="project-thumb" src="Projects/RcConProj/PCBtopviewRC.png" alt="ESP32 RC CON thumbnail">
+  <div>
+    <p class="project-meta"><span class="project-title">ESP32 RC/WIFI Controller</span><span class="kv">KiCad · ESD protection · RF · Wifi · ESP32 · HMI · JLCPCB DFM</span></p>
+    <p class="project-summary">Coming Soon.</p>
+    <p style="margin-top:8px;"><a href="Projects/rccproj" class="hero-cta ghost" style="padding:8px 12px;font-size:0.95rem;">View Case Study</a></p>
+  </div>
+</article>
+
+<!-- Project 4 -->
+<article class="project-card">
   <img class="project-thumb" src="subfolder/EmbSysProj/TopPCB_Luis.png" alt="STEM - DAM thumbnail">
   <div>
     <p class="project-meta"><span class="project-title">S.T.E.M. - DAM</span><span class="kv">Python · ESP32 · MQTT · IoT</span></p>

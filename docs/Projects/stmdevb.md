@@ -84,10 +84,7 @@ Create a **custom STM32 PCB** that:
 ## Results
 
 - Compact STM32 dev board
-- Provided a stable hardware platform for MQTT‑based communication  
 - Simplified integration through clean power and signal interfaces  
-- Enabled team debugging using standard MQTT tools  
-- Supported classroom demonstrations without additional hardware  
 
 ---
 
